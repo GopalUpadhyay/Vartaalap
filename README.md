@@ -98,3 +98,9 @@ Voice Cloning	    [ElevenLabs / Resemble.ai]
     Language auto-detect on speech start
     Mute original and play translated only
     Record or store transcripts
+
+
+
+
+Dependencies:
+npm install express socket.io cors dotenv mongoose jsonwebtoken bcryptjs nodemon axios multer ws form-data @google-cloud/translate @google-cloud/text-to-speech openai
