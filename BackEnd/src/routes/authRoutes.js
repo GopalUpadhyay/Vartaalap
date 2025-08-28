@@ -1,4 +1,6 @@
 import express from "express";
+import { protectedRoute } from "../Middleware/middleware.js";
+
 import {
 	signup,
 	login,
@@ -12,6 +14,6 @@ routes.post("/signup", signup);
 routes.post("/login", login);
 routes.post("/logout", logout);
 
-routes.get("/checkAuth", checkAuth);
+routes.get("/checkAuth", protectedRoute, checkAuth);
 
 export default routes;

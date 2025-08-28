@@ -92,7 +92,7 @@ export const logout = async (req, res) => {
 
 export const checkAuth = (req, res) => {
 	try {
-		// First Check the User using the Middleware and attach the user to req.user and returns if
+		// First Check the User using the Middleware and attach the user to [req.user] and returns it
 		// Authencited if not then NULL
 		return res.status(200).json(req.user);
 	} catch (error) {
